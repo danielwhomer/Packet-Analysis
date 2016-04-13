@@ -1,9 +1,8 @@
 # Packet-Analysis
 
+### Packet Sniffing across a local network
 
-
-
-
+This application was created for the COMP 4203 Wireless Networks and Security offered at Carleton University, Ottawa, ON. Using the WinPCap and Qt libraries, we hope to create a functioning protocol analysis application with a user friendly interface.
 
 ### WinPCap License
 
