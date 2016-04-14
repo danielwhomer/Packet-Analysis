@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>732</width>
-    <height>471</height>
+    <width>740</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,11 +19,14 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>731</width>
-      <height>411</height>
+      <width>741</width>
+      <height>421</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
      <item>
       <widget class="QTextBrowser" name="textBrowser"/>
      </item>
@@ -32,7 +35,7 @@
        <item>
         <widget class="QLabel" name="statusLabel">
          <property name="text">
-          <string>Status: </string>
+          <string>  Status: </string>
          </property>
         </widget>
        </item>
@@ -53,7 +56,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>732</width>
+     <width>740</width>
      <height>21</height>
     </rect>
    </property>
