@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
 namespace Ui {
 class MainWindow;
 }
@@ -15,11 +14,29 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-private slots:
-    void on_captureButton_clicked();
+protected:
+    //void contextMenuEvent(QContextMenuEvent *event) Q_DECL_OVERRIDE;
 
+private slots:
+    //capture button
+    void on_captureButton_clicked();
+    //menu entries
+    void exit();
+    void startCapture();
+    void stopCapture();
+    void saveCapture();
 private:
     Ui::MainWindow *ui;
+    //helper functions for QMenu creation
+    void createActions();
+    void createMenus();
+    //menus and actions associated with
+    QMenu *fileMenu;
+    QMenu *captureMenu;
+    QAction *exitAct;
+    QAction *startAct;
+    QAction *stopAct;
+    QAction *saveAct;
 };
 
 #endif // MAINWINDOW_H
