@@ -37,10 +37,7 @@ void MainWindow::exit()
   qApp->exit();
 }
 
-void MainWindow::startCapture()
-{
-
-}
+void MainWindow::startCapture(){}
 void MainWindow::stopCapture(){}
 void MainWindow::saveCapture(){}
 
